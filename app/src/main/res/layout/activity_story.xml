@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".storyActivity"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="5dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<ImageView
+    android:id="@+id/shika"
+    android:layout_width="170dp"
+    android:layout_height="225dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/shika"
+    />
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Asemhisham"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shika"
+        app:layout_constraintEnd_toEndOf="@+id/shika"
+        android:layout_margin="9dp"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="200dp"
+        app:cardElevation="0dp"
+        android:layout_margin="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/shika"
+        android:backgroundTint="@color/blue"
+        >
+
+        <ImageView
+
+            android:backgroundTint="@color/blue"
+            android:id="@+id/asem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/asemphoto2"
+            />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
